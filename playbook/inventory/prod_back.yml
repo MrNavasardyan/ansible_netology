@@ -1,11 +1,11 @@
 ---
   el:
     hosts:
-      centos:
+      4105a9d93859:
         ansible_connection: docker
   deb:
     hosts:
-      debian:
+      4be14c27ab9b:
         ansible_connection: docker
   localhost:
     hosts:
@@ -13,5 +13,5 @@
         ansible_connection: local
   fed:
     hosts:
-      fedora:
+      ba22dfd41fc5:
         ansible_connection: docker
