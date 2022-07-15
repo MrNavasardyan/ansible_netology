@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  deb:
+    image: bitnami/python
+  
+  fedora:
+    image: pycontribs/fedora
+
+  centos:
+    image: centos:7
