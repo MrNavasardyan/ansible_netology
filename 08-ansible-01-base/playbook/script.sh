@@ -2,13 +2,13 @@
 
 set -e
 
-deb=$(docker images | grep bitnami | awk '{print $1}')
+deb=$(docker images | grep bitnami | awk '{print $3}')
 echo $deb && docker run -dti --name debian $deb
 
-cent=$(docker images | grep "centos" | awk '{print $1}')
+cent=$(docker images | grep "centos" | awk '{print $3}')
 echo $cent && docker run -dti --name centos $cent
 
-fed=$(docker images | grep fedora | awk '{print $1}')
+fed=$(docker images | grep fedora | awk '{print $3}')
 echo $fed && docker run -dti --name fedora $fed
 
 # cd ./docker
