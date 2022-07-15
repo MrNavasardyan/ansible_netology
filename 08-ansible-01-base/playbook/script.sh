@@ -21,4 +21,6 @@ cd ..
 
 ansible-playbook -i inventory/prod.yml site.yml
 
-docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+docker compose down
+
+# docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
