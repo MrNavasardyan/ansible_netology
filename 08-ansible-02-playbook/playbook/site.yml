@@ -19,7 +19,7 @@
         path: "{{ java_home }}"
       tags: java
     - name: Extract java in the installation directory
-      unarchive:
+      ansible.builtin.unarchive:
         copy: false
         src: "/tmp/jdk-{{ java_jdk_version }}.tar.gz"
         dest: "{{ java_home }}"
@@ -52,7 +52,7 @@
         path: "{{ elastic_home }}"
       tags: elastic
     - name: Extract Elasticsearch in the installation directory
-      unarchive:
+      ansible.builtin.unarchive:
         copy: false
         src: "/tmp/elasticsearch-{{ elastic_version }}-linux-x86_64.tar.gz"
         dest: "{{ elastic_home }}"
