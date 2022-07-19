@@ -1,0 +1,11 @@
+---
+  webservers:
+    hosts:
+      ubuntu1:
+        ansible_connection: docker
+    
+      ubuntu2:
+        ansible_connection: docker
+        
+      ubuntu3:
+        ansible_connection: docker
